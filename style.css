@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.Navbar-Menu{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('https://img.pikbest.com/ai/illus_our/20230412/1651db4c8168ab1d9000aae2309cd949.png!w700wp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    top: 30px;
+    background-color: #f0f0f0;
+    box-shadow: 2px -1px 10px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px -1px 10px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px -1px 10px 2px rgba(0,0,0,0.75);
+}
+
+.leftside{
+    /* width: 10%; */
+    height: 80px;
+    position: relative;
+    float: left;     
+}
+
+.leftside img{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top:-25px;
+    left: 50px;
+}
+
+.rightside{
+    width: auto;
+    height: 80px;
+    float: right;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    justify-content: right;
+}
+
+.rightside a{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.9);
+    text-decoration: none;
+    padding: 10px 10px;
+    transition: 0.5s;
+}
+
+.navicon:hover{
+    color:#7c4a21
+}
+
+.menubar{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    opacity: 0;
+}
+
+.menubar .line{
+    height: 2px;
+    width: 50px;
+    background-color: black;
+    margin: 5px 0;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+.rightside i{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        flex-wrap: wrap;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+
+    .nav-links.open {
+        transform: translateX(0);
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 10px;
+}
+
+.heading{
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
+    text-align:right;
+}
+
+.heading h2{
+    font-size: 50px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.heading p{
+    font-size: 14px;
+    padding-bottom: 25px;
+    color: whitesmoke;
+}
+
+.heading i{
+    font-size: 18px;
+    margin-right: 10px;
+    animation: 25s change linear infinite;
+    transition: 0.5s;
+}
+
+.second-Sec{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.second-Sec img{
+    background-attachment: fixed;
+}
+
+.second-Sec h2{
+    text-align: left;
+    font-size: 35px;
+    padding-bottom: 20px;
+} 
+
+.second-Sec p{
+    font-size: 18px;
+    color: rgba(0,0,0,0.6);
+    padding-bottom: 25px;
+}
+
+.second-sec{
+    margin: 30px 0;
+}
+
+.MenuSection{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 100px 0;
+}
+
+.MenuSection img{
+    height: 300px;
+    margin: 20px 0px;
+}
+
+.MenuSection h1{
+    font-size: 35px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #c37a3e;
+    display: inline-block;
+}
+
+.MenuSection p{
+    font-size: 18px;
+    color: rgba(0,0,0,0.6);
+    padding: 25px 0;   
+}
+
+.Bakery-menu{
+    margin-top: 30px;
+}
+
+.Bakery-menu h3{
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #c37a3e;
+    text-align: left;
+    font-weight: bold;
+}
+
+.Bakery-menu h6{
+    padding: 10px 0px 5px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+}
+
+#Weight{
+    font-size: 12px;
+    color: rgba(0,0,0,0.6);
+    font-weight: lighter;
+}
+
+.Bakery-menu a{
+    float: right;
+    margin-right: 30px;
+    padding: 5px 13px;
+    background-color: #c37a3e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.Bakery-menu a:hover{
+    background-color: #7c4a21;
+}
+
+.Feedback{
+    width: 100%;
+    height: auto;
+    padding: 50px 0 0 0;
+    text-align: center;
+    margin: 0;
+}
+
+.Feedback h1{
+    font-size: 35px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #c37a3e;
+    display: inline-block;
+} 
+
+.Feedback p{
+    font-size: 18px;
+    color: rgba(0,0,0,0.6);
+    padding-bottom: 25px;
+}
+
+.feedback-background{
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://www.blibli.com/friends-backend/wp-content/uploads/2023/12/B1200393-Cover.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
+.center-heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.center-heading p{
+    font-size: 30px;
+    color: #fff;
+}
+
+.center-heading a{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    transition: 0.5s;
+    background-color: #c37a3e;
+}
+
+.center-heading a:hover{
+    background-color: #7c4a21;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0,0,0,0.1);
+    padding: 50px 0  0 0;
+    text-align: center;
+}
+
+.footer h3{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #c37a3e;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.footer p{
+    font-size: 15px;
+    color: rgba(0,0,0,0.5);
+    font-weight: lighter;
+    padding: 0 10px;
+}
+
+.footer i{
+    padding: 10px;
+    font-size: 22px;
+    color: rgba(0,0,0,0.8);
+    transition: 0.6s;
+}
+
+.footer i:hover{
+    color: #7c4a21;
+}
+
+.Copyright h4{
+    font-size: 18px;
+    line-height: 100px;
+}
+
+#Name{
+    color: rgba(0,0,0,0.8);
+    font-weight: bold;
+}
+#last-logo{
+    font-size: 30px;
+    font-style: italic;
+    display: inline-block;
+    color: #c37a3e;
+    font-weight: bold;
+}
